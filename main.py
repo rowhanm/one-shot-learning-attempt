@@ -14,7 +14,6 @@ if __name__ == 'main':
         if len(cg) == 1:
             ch = '0' + ch
         error[n-1] = classification_run('run'+ch, LoadImgAsPoints, ModHausdorffDistance, 'cost')
-        print "run" + str(n) + ", error " + str(error[n-1]) + "%."
     print "average error = " + str(np.mean(error)) + "%"
 
 def LoadImgAsPoints(file):
